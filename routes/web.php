@@ -10,6 +10,9 @@ Route::get('login', [LoginController::class, 'showLogin']);
 Route::post('login', [LoginController::class, 'attemptLogin']);
 Route::post('logout', [LoginController::class, 'logout']);
 
+Route::get('', function () {
+    return redirect('/models-stickers');
+});
 Route::get('index', [HomeController::class, 'index']);
 
 Route::get('models-stickers', [ModelsStickersController::class, 'index']);

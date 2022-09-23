@@ -24,19 +24,9 @@
         <hr>
     </div>
     <ul class="list-unstyled me-0 pe-0">
-        <li class="<?php echo (request_is('index') ? 'active' : ''); ?>">
-            <a href="/index">
-                الرئيسية
-            </a>
-        </li>
         <li class="<?php echo (request_is('models-stickers') ? 'active' : ''); ?>">
             <a href="/models-stickers">
                 ملصقات العلب
-            </a>
-        </li>
-        <li>
-            <a href="">
-                بصمة الملابس
             </a>
         </li>
     </ul>
