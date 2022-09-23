@@ -1,0 +1,38 @@
+nav.main-navbar {
+    margin-right: 250px;
+    background-color: #eee;
+    padding: 15px 20px;
+    box-shadow: -10px -6px 10px 0px rgb(0 0 0);
+    overflow: hidden;
+
+    ul {
+        margin-bottom: 0px;
+        padding-right: 0px;
+
+        li {
+            display: inline-block;
+            cursor: pointer;
+
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+        
+        &.links {
+            float: right;
+
+            li {
+                margin-left: 10px;
+            }
+        }
+
+        &.fixed{
+            float: left;
+
+            li{
+                margin-right: 10px;
+            }
+        }
+    }
+}

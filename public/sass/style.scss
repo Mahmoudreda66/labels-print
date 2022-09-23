@@ -1,0 +1,57 @@
+body {
+    font-family: cairo;
+}
+
+.content:first-of-type {
+    margin-right: 250px;
+    padding: 15px;
+}
+
+input.form-control:focus,
+input.form-check:focus,
+select.form-select:focus,
+button.btn:focus {
+    box-shadow: none !important;
+}
+
+.invalid-feedback {
+    display: block;
+}
+
+.modal-footer {
+    justify-content: flex-start;
+}
+
+#card_preview {
+    width: 3.9999cm;
+    height: 2.49cm;
+    border: 4px none #000;
+    display: flex;
+    border-radius: 0px !important;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fa-lightbulb {
+    color: var(--bs-warning)
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+@media print {
+    .table-printable {
+        thead tr th:last-of-type,
+        tbody tr td:last-of-type{
+            display: none
+        }
+    }
+}
+
+@import '_sidebar.scss';
+@import '_navbar.scss';
