@@ -2,7 +2,7 @@
     <div class="p-3">
         <div class="text-center">
             <div>
-                <span><?php echo auth('name'); ?></span>
+                <span><?php echo env('APP_NAME'); ?></span>
             </div>
             <div>
                 <small id="sidebar_date"><?php echo date('n/j/Y g:i:s A'); ?></small>

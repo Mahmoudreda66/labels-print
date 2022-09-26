@@ -15,19 +15,16 @@
                         <label for="sticker" class="form-label">الملصق</label>
                         <div class="bg-light p-3">
                             <div>
-                                <div class="card mx-auto" id="card_preview" contenteditable>
+                                <div class="card mx-auto position-relative" id="card_preview" contenteditable>
                                     <div>
                                         <span>الصنف: </span>
-                                        <span>ط هاف كول رجالي</span>
+                                        <span>اسبور أبيض</span>
                                     </div>
                                     <div>
                                         <span>المقاس: </span>
-                                        <span>2XL</span>
+                                        <span>40</span>
                                     </div>
-                                    <div>
-                                        <span>اللون: </span>
-                                        <span>أبيض</span>
-                                    </div>
+                                    <img src="<?php echo asset('img/png/006-sweater.png'); ?>">
                                 </div>
                             </div>
                             <small class="form-text">
@@ -37,25 +34,31 @@
                             <hr>
                             <div id="card_options">
                                 <div class="row">
-                                    <div class="col-4 border-start">
+                                    <div class="col-3">
                                         <div class="row">
-                                            <div class="col-6">
-                                                <input type="radio" name="size" class="sizeRadio" id="size1" data-size="big">
-                                                <label for="size1">ملصق كبير</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="radio" name="size" class="sizeRadio" id="size2" data-size="small" checked>
-                                                <label for="size2">ملصق صغير</label>
-                                            </div>
+                                            <label for="line_height" class="form-label">مسافة السطور</label>
+                                            <input type="number" id="line_height" class="form-control" value="1.2">
                                         </div>
                                     </div>
-                                    <div class="col-4 border-start">
+                                    <div class="col-3">
+                                        <label for="icon" class="form-label">أيقونة المنتج</label>
+                                        <select id="icon" class="form-select">
+                                            <option value="">بدون</option>
+                                            <option value="<?php echo asset('img/png/002-undershirt-1.png'); ?>" selected>حمالة</option>
+                                            <option value="<?php echo asset('img/png/004-underwear-1.png'); ?>">شورت</option>
+                                            <option value="<?php echo asset('img/png/003-underwear.png'); ?>">سلب</option>
+                                            <option value="<?php echo asset('img/png/005-tshirt.png'); ?>">نص كم</option>
+                                            <option value="<?php echo asset('img/png/001-undershirt.png'); ?>">حمالة توب</option>
+                                            <option value="<?php echo asset('img/png/006-sweater.png'); ?>">هاف كول</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="checkbox" id="horizontal_center">
+                                        <label for="horizontal_center">توسيط أفقي</label>
+                                    </div>
+                                    <div class="col-3">
                                         <input type="checkbox" id="vertical_center">
                                         <label for="vertical_center">توسيط رأسي</label>
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="checkbox" id="horizontal_center" checked>
-                                        <label for="horizontal_center">توسيط أفقي</label>
                                     </div>
                                 </div>
                             </div>
@@ -69,13 +72,13 @@
                                     </div>
                                     <div class="col-3">
                                         <label for="font_size_input" class="form-label">حجم الخط</label>
-                                        <input type="number" id="font_size_input" value="14" class="form-control">
+                                        <input type="number" id="font_size_input" value="12" class="form-control">
                                     </div>
                                     <div class="col-3">
                                         <label for="font_family_select" class="form-label">نوع الخط</label>
                                         <select id="font_family_select" class="form-select">
-                                            <option value="Arial" selected>Arial</option>
-                                            <option value="cairo">Cairo</option>
+                                            <option value="Arial">Arial</option>
+                                            <option value="cairo" selected>Cairo</option>
                                             <option value="'sans-serif'">sans-serif</option>
                                             <option value="Tahoma">Tahoma</option>
                                             <option value="'Times New Roman'">Times New Roman</option>

@@ -5,7 +5,8 @@ let cardPreview = _('#card_preview'),
     borderSelect = _('#border_select'),
     verticalCenterCheckbox = _('#vertical_center'),
     horizontalCenterCheckbox = _('#horizontal_center'),
-    sizeRadioInputs = _('.sizeRadio', true);
+    iconSelect = _('#icon'),
+    lineHeightInput = _('#line_height');
 
 function paddingChange(paddingValue, element) {
     element.style.padding = paddingValue + 'px';
@@ -46,21 +47,20 @@ function submitForm() {
     _('#add_sticker_form').submit();
 }
 
-function cardSizeChange(size, element) {
-    let width, height;
+function iconChange(value, element) {
+    let imgElement = element.querySelector('img');
 
-    if (size == 'small') {
-        width = '3.9999cm';
-        height = '2.49cm';
-        element.style.lineHeight = 'unset';
-    } else if (size == 'big') {
-        element.style.lineHeight = '2';
-        width = '4.5999cm';
-        height = '5.69cm';
+    imgElement.style.display = 'none';
+
+    if (value != "") {
+        imgElement.style.display = 'block';
+
+        imgElement.src = value;
     }
+}
 
-    element.style.width = width;
-    element.style.height = height;
+function lineHeightChange(value, element) {
+    element.style.lineHeight = value;
 }
 
 _('button#addStickerButton').onclick = function () {
@@ -74,7 +74,8 @@ window.onload = function () {
     borderChange(borderSelect.value, cardPreview);
     verticalCenterChange(verticalCenterCheckbox.checked, cardPreview);
     horizontalCenterChange(horizontalCenterCheckbox.checked, cardPreview);
-    cardSizeChange(_('.sizeRadio:checked')?.dataset.size, cardPreview);
+    iconChange(iconSelect.value, cardPreview);
+    lineHeightChange(lineHeightInput.value, cardPreview);
 }
 
 paddingInput.oninput = function () {
@@ -101,10 +102,10 @@ horizontalCenterCheckbox.onchange = function () {
     horizontalCenterChange(this.checked, cardPreview);
 }
 
-for (let i = 0; i < sizeRadioInputs.length; i++) {
-    sizeRadioInputs[i].onchange = function () {
-        if (this.checked) {
-            cardSizeChange(this.dataset.size, cardPreview)
-        }
-    }
+iconSelect.onchange = function () {
+    iconChange(this.value, cardPreview);
+}
+
+lineHeightInput.oninput = function () {
+    lineHeightChange(this.value, cardPreview);
 }

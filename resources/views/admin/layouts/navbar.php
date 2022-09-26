@@ -17,8 +17,7 @@
             <i class="fas fa-print" onclick="printPage();"></i>
         </li>
         <li>
-            <form action="/logout" id="logoutForm" method="post"></form>
-            <i class="fas fa-lock" onclick="_('#logoutForm').submit();"></i>
+            <i class="fab fa-whatsapp" onclick="location.href = 'https:\/\/wa.me/+201274385491?text=الدعم الفني لمصنع اللورد كيمو';"></i>
         </li>
     </ul>
 </nav>

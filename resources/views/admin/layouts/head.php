@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>
         <?php
-        $mainHeadTitle = 'مصنع اللورد كيمو';
+        $mainHeadTitle = env('APP_NAME');
 
         if (isset($pageTitle)) {
             $mainHeadTitle .= ' | ' . $pageTitle;

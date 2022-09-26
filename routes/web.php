@@ -6,9 +6,9 @@ use App\Http\Controllers\ModelsStickersController;
 use Mahmoud\Labels\Route;
 
 // auth routes
-Route::get('login', [LoginController::class, 'showLogin']);
-Route::post('login', [LoginController::class, 'attemptLogin']);
-Route::post('logout', [LoginController::class, 'logout']);
+// Route::get('login', [LoginController::class, 'showLogin']);
+// Route::post('login', [LoginController::class, 'attemptLogin']);
+// Route::post('logout', [LoginController::class, 'logout']);
 
 Route::get('', function () {
     return redirect('/models-stickers');

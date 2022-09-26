@@ -28,6 +28,13 @@ button.btn:focus {
   border: 4px none #000;
   display: flex;
   border-radius: 0px !important;
+  overflow: hidden;
+}
+#card_preview img {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  width: 50px;
 }
 
 a,

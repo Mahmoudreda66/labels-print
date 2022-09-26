@@ -134,9 +134,9 @@ if (!function_exists('mustAuth')) {
      */
     function mustAuth(): void
     {
-        if (!session('user') && !cookie('user')) {
-            redirect('/login');
-        }
+        // if (!session('user') && !cookie('user')) {
+        //     redirect('/login');
+        // }
     }
 }
 
@@ -146,9 +146,9 @@ if (!function_exists('mustNotAuth')) {
      */
     function mustNotAuth(): void
     {
-        if (session('user') || cookie('user')) {
-            redirect('/index');
-        }
+        // if (session('user') || cookie('user')) {
+        //     redirect('/index');
+        // }
     }
 }
 

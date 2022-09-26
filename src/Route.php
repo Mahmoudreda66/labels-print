@@ -5,7 +5,7 @@ namespace Mahmoud\Labels;
 class Route
 {
     /**
-     * container of routes^it's actions
+     * container of routes & it's actions
      * 
      * @var array
      */

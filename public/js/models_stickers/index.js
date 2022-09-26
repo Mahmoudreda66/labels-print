@@ -5,7 +5,7 @@ let addStickerModal = new bootstrap.Modal(_('#addModal')),
 _('#createNewSticker').onclick = () => {
     addStickerModal.show();
 
-    forceFocus(_('#addStickerForm input[type="text"]:first-of-type'));
+    forceFocus(_('#add_sticker_form input[type="text"]:first-of-type'));
 };
 
 for (let i = 0; i < deletStickersBtns.length; i++) {

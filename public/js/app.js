@@ -31,7 +31,7 @@ function printPage() {
 // function to focus on element after 500ms
 function forceFocus(element) {
     setTimeout(function () {
-        element?.focus();
+        element.focus();
     }, 500);
 }
 
