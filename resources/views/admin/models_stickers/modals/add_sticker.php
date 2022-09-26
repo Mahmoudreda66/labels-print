@@ -17,14 +17,14 @@
                             <div>
                                 <div class="card mx-auto position-relative" id="card_preview" contenteditable>
                                     <div>
-                                        <span>الصنف: </span>
-                                        <span>اسبور أبيض</span>
+                                        <span>الصنف:&nbsp;</span>
+                                        <span></span>
                                     </div>
                                     <div>
-                                        <span>المقاس: </span>
-                                        <span>40</span>
+                                        <span>المقاس:&nbsp;</span>
+                                        <span></span>
                                     </div>
-                                    <img src="<?php echo asset('img/png/006-sweater.png'); ?>">
+                                    <img src="">
                                 </div>
                             </div>
                             <small class="form-text">
@@ -37,7 +37,7 @@
                                     <div class="col-3">
                                         <div class="row">
                                             <label for="line_height" class="form-label">مسافة السطور</label>
-                                            <input type="number" id="line_height" class="form-control" value="1.2">
+                                            <input type="number" id="line_height" class="form-control" value="2">
                                         </div>
                                     </div>
                                     <div class="col-3">
@@ -45,18 +45,22 @@
                                         <select id="icon" class="form-select">
                                             <option value="">بدون</option>
                                             <option value="<?php echo asset('img/png/002-undershirt-1.png'); ?>" selected>حمالة</option>
+                                            <option value="<?php echo asset('img/png/001-undershirt.png'); ?>">حمالة توب</option>
                                             <option value="<?php echo asset('img/png/004-underwear-1.png'); ?>">شورت</option>
                                             <option value="<?php echo asset('img/png/003-underwear.png'); ?>">سلب</option>
                                             <option value="<?php echo asset('img/png/005-tshirt.png'); ?>">نص كم</option>
-                                            <option value="<?php echo asset('img/png/001-undershirt.png'); ?>">حمالة توب</option>
                                             <option value="<?php echo asset('img/png/006-sweater.png'); ?>">هاف كول</option>
+                                            <option value="<?php echo asset('img/png/007-zyad.png'); ?>">طقم شورت</option>
+                                            <option value="<?php echo asset('img/png/008-zyad-1.png'); ?>">طقم سلب</option>
+                                            <option value="<?php echo asset('img/png/009-salma-1.png'); ?>">طقم توب سلب</option>
+                                            <option value="<?php echo asset('img/png/010-salma.png'); ?>">طقم توب شورت</option>
                                         </select>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-3 mt-4">
                                         <input type="checkbox" id="horizontal_center">
                                         <label for="horizontal_center">توسيط أفقي</label>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-3 mt-4">
                                         <input type="checkbox" id="vertical_center">
                                         <label for="vertical_center">توسيط رأسي</label>
                                     </div>
