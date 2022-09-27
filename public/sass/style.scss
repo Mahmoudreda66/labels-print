@@ -22,22 +22,6 @@ button.btn:focus {
     justify-content: flex-start;
 }
 
-#card_preview {
-    width: 3.9999cm;
-    height: 2.49cm;
-    border: 4px none #000;
-    display: flex;
-    border-radius: 0px !important;
-    overflow: hidden;
-    
-    img{
-        position: absolute;
-        left: 4px;
-        bottom: 4px;
-        width: 50px;
-    }
-}
-
 a,
 a:hover {
     text-decoration: none;

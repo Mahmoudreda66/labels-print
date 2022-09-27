@@ -9,6 +9,7 @@ use Mahmoud\Labels\Route;
 // Route::get('login', [LoginController::class, 'showLogin']);
 // Route::post('login', [LoginController::class, 'attemptLogin']);
 // Route::post('logout', [LoginController::class, 'logout']);
+Route::get('test', fn () => view('test'));
 
 Route::get('', function () {
     return redirect('/models-stickers');

@@ -15,16 +15,30 @@
                         <label for="sticker" class="form-label">الملصق</label>
                         <div class="bg-light p-3">
                             <div>
-                                <div class="card mx-auto position-relative" id="card_preview" contenteditable>
+                                <div id="card_preview" style="width: 3.9999cm;
+                                height: 2.49cm;
+                                border: 4px none #000;
+                                display: flex;
+                                border-radius: 0px !important;
+                                overflow: hidden;
+                                flex-direction: column;
+                                position: relative;
+                                background-color: #fff;
+                                margin: 0px auto;
+                                text-align: right;
+                                direction: rtl;" contenteditable>
                                     <div>
-                                        <span>الصنف:&nbsp;</span>
-                                        <span></span>
+                                        <span>الصنف:</span>
+                                        <span> اسبور أبيض</span>
                                     </div>
                                     <div>
-                                        <span>المقاس:&nbsp;</span>
-                                        <span></span>
+                                        <span>المقاس:</span>
+                                        <span><b>40</b></span>
                                     </div>
-                                    <img src="">
+                                    <img src="" style="position: absolute;
+                                    left: 4px;
+                                    bottom: 4px;
+                                    width: 50px;" alt="">
                                 </div>
                             </div>
                             <small class="form-text">
@@ -76,7 +90,7 @@
                                     </div>
                                     <div class="col-3">
                                         <label for="font_size_input" class="form-label">حجم الخط</label>
-                                        <input type="number" id="font_size_input" value="12" class="form-control">
+                                        <input type="number" id="font_size_input" value="14" class="form-control">
                                     </div>
                                     <div class="col-3">
                                         <label for="font_family_select" class="form-label">نوع الخط</label>
